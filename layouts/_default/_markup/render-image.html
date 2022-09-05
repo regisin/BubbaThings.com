@@ -1,0 +1,74 @@
+{{/* Original code from: https://laurakalbag.com/processing-responsive-images-with-hugo/   */}}
+{{/* Just modified a bit to work with render_image hook and output webp images   */}}
+{{/* get file that matches the filename as specified as src=""  */}}
+{{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))  }}
+{{ $alt := .PlainText | safeHTML }}
+
+{{/* So for posts that aren't setup in the page bundles, it doesn't fail  */}}
+{{ if $src }}
+
+{{ $tinyw := "500x" }}
+{{ $smallw := "800x" }}
+{{ $mediumw := "1200x" }}
+{{ $largew := "1500x" }}
+
+{{/* resize the src image to the given sizes */}}
+{{/* We create a a temp scratch because it's not available in this context */}}
+{{ $data := newScratch }}
+
+
+{{/* only resize images if they are bigger than the thresholds */}}
+
+
+{{ if gt $src.Width 500 }}
+{{ $data.Set "tiny" ($src.Resize $tinyw) }}
+{{ end }}
+{{ if gt $src.Width 800 }}
+{{ $data.Set "small" ($src.Resize $smallw) }}
+{{ end }}
+{{ if gt $src.Width 1200 }}
+{{ $data.Set "medium" ($src.Resize $mediumw) }}
+{{ end }}
+{{ if gt $src.Width 1500 }}
+{{ $data.Set "large" ($src.Resize $largew) }}
+{{ end }}
+
+{{/* add the processed images to the scratch */}}
+
+{{ $tiny := $data.Get "tiny" }}
+{{ $small := $data.Get "small" }}
+{{ $medium := $data.Get "medium" }}
+{{ $large := $data.Get "large" }}
+
+{{/* only use images smaller than or equal to the src (original) 
+image size, as Hugo will upscale small images */}}
+
+
+<p>
+    <picture>
+    
+    <source media="(max-width: 376px)" 
+        srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
+
+    <source media="(max-width: 992px)" 
+        srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
+
+    <source media="(max-width: 1400px)" 
+        srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
+
+    <source media="(min-width: 1600px)" 
+        srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
+    
+    {{ if gt $src.Width 1500 }}
+    <img alt="{{ $alt }}" title="{{ $alt }}" src="{{with $large.RelPermalink }}{{.}}{{ end }}">
+    {{ else }}
+    <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $src }}">
+    {{ end }}
+
+</picture>
+</p>
+  
+  {{/* Since I do image-response class, the only thing that really 
+  matters is the height and width matches the image aspect ratio */}}
+
+  {{ end }}
