@@ -2,7 +2,7 @@ backend:
   name: github
   repo: regisin/bubbathings.com
   branch: main
-  base_url: https://auth.paregis.com/
+  base_url: https://auth.paregis.me/
 
 publish_mode: editorial_workflow
 
