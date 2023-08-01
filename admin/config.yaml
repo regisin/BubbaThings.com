@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: regisin/paregis.me
+  branch: main
+  base_url: https://auth.paregis.com/
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images"
+public_folder: "images"
+
+site_url: http://bubbathings.com
+display_url: http://bubbathings.com
+
+collections:
+  - label: "Posts"
+    name: "posts"
+    folder: "content/posts"
+    path: "{{slug}}/index"
+    media_folder: "images"
+    public_folder: "images"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "string"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        field: {
+          label: "category",
+          name: "category",
+          widget: "relation",
+          collection: "categories",
+          searchFields: ["name"],
+          valueField: "name"
+        }
+      - label: "Comments"
+        name: "comments"
+        widget: "list"
+        field: {
+          label: "Comment",
+          name: "comment",
+          widget: "text",
+        }
+      - {label: "Content", name: "content", widget: "markdown"}
+  - label: "Categories"
+    name: "categories"
+    folder: "content/categories"
+    create: true
+    slug: "{{name}}"
+    identifier_field: "name"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
