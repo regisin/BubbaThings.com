@@ -13,13 +13,16 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
-      - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v4
-      - uses: actions/setup-python@v4
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - run: python main.py
-
+      - name: Install dependencies
+        run: |
+            python -m pip install --upgrade pip
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Build pages script
+        run: python main.py
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
