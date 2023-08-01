@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: regisin/paregis.me
+  repo: regisin/bubbathings.com
   branch: main
   base_url: https://auth.paregis.com/
 
