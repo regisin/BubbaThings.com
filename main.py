@@ -9,6 +9,7 @@ env = Environment(
     loader=FileSystemLoader("templates"),
     autoescape=select_autoescape()
 )
+env.globals['BASE_URL'] = 'https://bubbathings.com'
 
 # build dir
 dist = Path('./dist')
