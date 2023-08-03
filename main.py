@@ -31,14 +31,15 @@ shutil.copytree(static, dist, dirs_exist_ok=True)
 posts = []
 for post in os.listdir(content/"posts"):
     meta = frontmatter.load(content/"posts"/post/"index.md")
+
     post_dict = {
         'slug': post,
-        'title': meta['title'],
-        'description': meta['description'],
-        'categories': meta['categories'],
+        'title': meta['title'] if 'title' in meta.keys() else "Hello world",
+        'description': meta['description'] if 'description' in meta.keys() else "Description of hello world.",
+        'categories': meta['categories'] if 'categories' in meta.keys() else [],
         'date': meta['date'].strftime("%B %d, %Y"),
         'markdown': meta.content,
-        'content': markdown.markdown(meta.content)
+        'body': markdown.markdown(meta.content)
     }
     posts.append(post_dict)
 
