@@ -5,7 +5,7 @@
 
 {% block content %}
 <p class="meta">Posted on: {{ post.date }}</p>
-{{ post.content | safe }}
+{{ post.body | safe }}
 
 {% for comment in comments %}
 {{ comment }}

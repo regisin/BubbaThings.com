@@ -43,7 +43,7 @@ collections:
           name: "comment",
           widget: "text",
         }
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown"}
   - label: "Categories"
     name: "categories"
     folder: "content/categories"
