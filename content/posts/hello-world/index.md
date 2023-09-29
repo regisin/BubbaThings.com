@@ -1,10 +1,12 @@
 ---
-title: "Hello world!"
+title: Hello world!
 date: 2023-08-01T00:00:01-05:00
 draft: true
-description: "Welcome to Bubba's website."
+description: Welcome to Bubba's website.
 categories:
-- Miscellaneous
+  - Miscellaneous
+comments:
+  - I mean I don't know... hi, I guess!
 ---
 
 # Hello world
