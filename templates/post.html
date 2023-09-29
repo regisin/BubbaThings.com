@@ -8,6 +8,7 @@
 {{ post.body | safe }}
 
 {% for comment in post.comments %}
+<hr>
 {{ comment }}
 {% endfor %}
 

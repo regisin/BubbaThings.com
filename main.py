@@ -37,6 +37,7 @@ for post in os.listdir(content/"posts"):
         'title': meta['title'] if 'title' in meta.keys() else "Hello world",
         'description': meta['description'] if 'description' in meta.keys() else "Description of hello world.",
         'categories': meta['categories'] if 'categories' in meta.keys() else [],
+        'comments': meta['comments'] if 'comments' in meta.keys() else [],
         'date': meta['date'].strftime("%B %d, %Y"),
         'markdown': meta.content,
         'body': markdown.markdown(meta.content)
@@ -59,6 +60,6 @@ for post in posts:
     try:
         shutil.copytree(content/post['slug']/'images', images_dist, dirs_exist_ok=True)
     except FileNotFoundError as e:
-        print(e)
+        print("~Exception excepted~", e)
     template.stream(post=post).dump(str(dist / post['slug'] / "index.html"))
 
