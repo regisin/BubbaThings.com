@@ -7,7 +7,7 @@
 <p class="meta">Posted on: {{ post.date }}</p>
 {{ post.body | safe }}
 
-{% for comment in comments %}
+{% for comment in post.comments %}
 {{ comment }}
 {% endfor %}
 
