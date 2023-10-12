@@ -3,7 +3,7 @@ title: How To Throw a Frisbee (Disc)
 date: 2023-10-12T14:55:16.041Z
 description: Disc Throwing Explained
 categories:
-  - Bubba's Pro Tips
+  - How To
 ---
 “I can’t throw a Frisbee.” 
 
