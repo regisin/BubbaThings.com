@@ -42,13 +42,12 @@ for post in os.listdir(content/"posts"):
         'categories': meta['categories'] if 'categories' in meta.keys() else [],
         'comments': meta['comments'] if 'comments' in meta.keys() else [],
         'date': meta['date'].strftime("%B %d, %Y"),
-        'date_for_sort': datetime.datetime.strptime(meta['date'], "%Y-%m-%d"),
         'markdown': meta.content,
         'body': markdown.markdown(meta.content)
     }
     posts.append(post_dict)
 
-sorted_posts = sorted(posts, key=itemgetter('date_for_sort'), reverse=True) 
+sorted_posts = sorted(posts, key=itemgetter('date'), reverse=True) 
 
 # build home page
 template = env.get_template("posts.html")
