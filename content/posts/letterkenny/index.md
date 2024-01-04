@@ -2,13 +2,10 @@
 title: Letterkenny
 date: 2024-01-04T19:31:03.529Z
 description: Crude TV Show. Very Much Rated R. Very NSFW. Very NSF Kids. Very Nice.
-categories: []
+categories:
+  - Random
 ---
-T﻿here are too many poop sounds and there are too many fart sounds.
-
-Episode three is t﻿errible. 
-
-Unless you're into fart and poop jokes.
+T﻿here are too many poop sounds and there are too many fart sounds and Episode 3 is terrible. Unless of course you're into fart and poop jokes. 
 
 A﻿nd that's the extent of the bad review. 
 
@@ -35,8 +32,6 @@ I﻿'d have a beer.
 I'd have a dart. 
 
 W﻿hy don't you take about 20% off 'er there?
-
-
 
 Lines that just make their way, or could make their way into your every day vernacular because the characters just become staples in your own life. They seem like they could be your friends.
 
