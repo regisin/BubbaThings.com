@@ -1,7 +1,7 @@
 ---
 title: Market Gardening Pro-Tips
 date: 2024-04-25T17:23:56.641Z
-description: Seeding Tip
+description: Jang Seeder Tight Spacing Seeding Tip
 categories:
   - Market Gardening
 ---
