@@ -1,3 +1,3 @@
 ---
-name: James Bubba Marulli Life Pro Tips
+name: Life Pro Tips
 ---
