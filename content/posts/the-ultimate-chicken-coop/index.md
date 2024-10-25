@@ -15,17 +15,32 @@ M﻿y thing is... if I can automate it - I want to automate it. If I can make it
 
 Different varieties of chickens lay eggs at different rates. Some chickens lay an egg every 26 hours. You don't need a lot of chickens to get a lot of eggs. \
 \
-I﻿ don't have any recommendations for products as I haven't started down the chicken... rabbit... hole but I spent a good deal of time looking into how to build a coop and run.
+I﻿ don't have any recommendations for products as I haven't started down the chicken... rabbit... hole but I spent a good deal of time looking into how to build a coop and run.\
+\
+Y﻿ou can build your own coop and run or, purchase a pre-built set, or pay a company to make you a custom one.
+
+I﻿ do not ensorse any of these products. I'm merely showing examples. Some of these examples may have bad reviews and I'm only showing the potential. I merely am supplying a starting point.
+
+
+
+1﻿) [Prebuilt Small Coop](https://www.tractorsupply.com/tsc/product/producers-pride-mini-defender-coop-mdc001-1485300)
+
+
+
+
 
 **C﻿oop vs Run**
 
 A﻿ coop is where they live and where they lay eggs.
 
-A﻿ run is a secured area where they play and can run around. People who free range sometimes choose to have a run as well so that their yardbirds can be locked up away from predators if they go out of own. A lot of people also choose to free range during the day and lock their chickens up at night.
+A﻿ run is a secured area where they play and can run around. People who free range sometimes choose to have a run as well so that their yardbirds can be locked up away from predators if they go out of town. A lot of people also choose to free range during the day and lock their chickens up at night.
 
-C﻿oops and Runs are often combined, and the chickens often have access to both areas 24/7 but will often naturally choose to go inside the coop when sleeping.
+C﻿oops and Runs are often combined, and the chickens often have access to both areas 24/7 but will often naturally choose to go inside the coop when sleeping. 
 
-\
-1﻿) **Roll Away Nest Boxes**
 
-The longer an egg sits where the chicken laid it, the more likely trhat the eend up coveri with poop or will begin sitting on it trying to hatch it. I they have an opportunity to sit on their eggs, they will, and then they won't lay eggs.nggggggggggggggggrg
+
+
+
+**Roll Away Nest Boxes**
+
+The longer an egg sits where the chicken laid it, the more likely trhat the eend up coveri with poop or will begin sitting on it trying to hatch it. I they have an opportunity to sit on their eggs, they will, and then they won't lay eggs.
