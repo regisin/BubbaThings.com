@@ -5,7 +5,7 @@ description: Consider these random farming thoughts while on your journey.
 categories:
   - Market Gardening
 ---
-Every new project costs new money. There's a million things to want for each project. Try to build out one project at a time so you can finish the project. It can take a while to earn that money back. Don't go broke trying too many ventures at one time. Let the farm start to pay for new projects.\
+Every new project costs new money. There are a million things to want for each project. Try to build out one project at a time so you can finish the project. It can take a while to earn that money back. Don't go broke trying too many ventures at one time. Let the farm start to pay for new projects.\
 \
 The more you optimize, the more you spend in money up front but save in time. Do what you want with that. Make it easy - but don't go broke.\
 \
